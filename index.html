@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GermanPro Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f4f7fb;color:#333;line-height:1.6;}
+a{text-decoration:none;}
+section{padding:80px 10%;text-align:center;}
+h2{font-size:36px;margin-bottom:40px;color:#243b55;}
+.hero{height:100vh;background:linear-gradient(135deg,#141e30,#243b55);display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-align:center;padding:20px;}
+.hero h1{font-size:55px;}
+.hero p{margin-top:15px;font-size:20px;}
+.btn{margin-top:25px;padding:14px 30px;background:#00c6ff;color:white;border:none;border-radius:30px;font-weight:600;transition:0.3s;}
+.btn:hover{background:#0094cc;transform:scale(1.05);}
+.courses{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;}
+.card{background:white;padding:30px;width:300px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,0.08);transition:0.3s;}
+.card:hover{transform:translateY(-10px);}
+.level{font-size:22px;color:#00c6ff;margin-bottom:15px;}
+.why{background:#eef4f7;}
+.testimonials{background:#ffffff;}
+.testimonial-box{max-width:600px;margin:20px auto;padding:20px;background:#f0f4f9;border-radius:10px;}
+form{max-width:500px;margin:auto;text-align:left;}
+input,select,textarea{width:100%;padding:12px;margin-bottom:15px;border-radius:8px;border:1px solid #ccc;}
+button{width:100%;padding:14px;background:#243b55;color:white;border:none;border-radius:8px;font-weight:600;}
+footer{background:#111;color:white;padding:20px;text-align:center;}
+.whatsapp-float{position:fixed;width:60px;height:60px;bottom:30px;right:30px;background:#25D366;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;text-decoration:none;box-shadow:0 5px 15px rgba(0,0,0,0.2);}
+.payment-btn{display:inline-block;margin-top:15px;padding:12px 25px;background:#ff7f50;color:white;border-radius:8px;font-weight:600;}
+.faq-box{max-width:800px;margin:20px auto;text-align:left;padding:20px;background:#f0f4f9;border-radius:10px;}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+<h1>GermanPro Academy</h1>
+<p>Professional German Courses | A1 – B1 | Exam Preparation</p>
+<a href="https://wa.me/250796480059" class="btn">Enroll Now via WhatsApp</a>
+</div>
+
+<!-- COURSES -->
+<section>
+<h2>Our German Levels</h2>
+<div class="courses">
+<div class="card"><div class="level">A1 – Beginner</div><p>Alphabet, greetings, basic grammar, introductions, simple conversations.</p></div>
+<div class="card"><div class="level">A2 – Elementary</div><p>Daily life conversations, email writing, grammar expansion, listening skills.</p></div>
+<div class="card"><div class="level">B1 – Intermediate</div><p>Full exam preparation, speaking fluency, formal letters, discussion practice.</p></div>
+</div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why">
+<h2>Why Choose GermanPro Academy?</h2>
+<p>
+✔ Structured A1–B1 Curriculum<br>
+✔ Focus on Speaking Confidence<br>
+✔ B1 Exam Preparation Training<br>
+✔ Affordable & Flexible Schedule<br>
+✔ Online & Live Classes
+</p>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+<h2>Student Testimonials</h2>
+<div class="testimonial-box"><p>"I passed my B1 exam in one attempt! The lessons are clear and structured."</p><strong>– Student, Kigali</strong></div>
+<div class="testimonial-box"><p>"My speaking improved very fast. I feel confident now."</p><strong>– Online Student</strong></div>
+</section>
+
+<!-- ABOUT -->
+<section class="why">
+<h2>About GermanPro Academy</h2>
+<p>GermanPro Academy helps students from A1 to B1 level to confidently learn German, pass exams, and communicate fluently. We focus on speaking, listening, reading, and writing skills in a structured and engaging way.</p>
+</section>
+
+<!-- FAQ -->
+<section>
+<h2>Frequently Asked Questions</h2>
+<div class="faq-box">
+<strong>Q: What levels do you teach?</strong>
+<p>A: We teach A1, A2, and B1 levels.</p>
+<strong>Q: How do I register?</strong>
+<p>A: Fill the registration form below or message us on WhatsApp.</p>
+<strong>Q: Do you offer online classes?</strong>
+<p>A: Yes, both online and live classes are available.</p>
+</div>
+</section>
+
+<!-- STUDENT REGISTRATION -->
+<section id="register">
+<h2>Student Registration</h2>
+<form name="student-registration" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="student-registration">
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="email" name="email" placeholder="Email Address" required>
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+  <select name="level" required>
+    <option value="">Select Level</option>
+    <option>A1</option>
+    <option>A2</option>
+    <option>B1</option>
+  </select>
+  <textarea name="message" placeholder="Additional Message"></textarea>
+  <button type="submit">Submit Registration</button>
+</form>
+<p style="margin-top:10px;">💡 Payments: <span class="payment-btn">Pay Later via WhatsApp</span></p>
+</section>
+
+<!-- CONTACT -->
+<section>
+<h2>Contact Us</h2>
+<p>📧 germanproacademy@gmail.com</p>
+<p>📱 +250 796 480 059</p>
+<p>🌐 <a href="https://www.fiverr.com/sellers/bruce_malot" target="_blank">Fiverr Profile</a></p>
+</section>
+
+<footer>
+© 2026 GermanPro Academy | All Rights Reserved
+</footer>
+
+<a href="https://wa.me/250796480059" class="whatsapp-float">💬</a>
+
+</body>
+</html>
